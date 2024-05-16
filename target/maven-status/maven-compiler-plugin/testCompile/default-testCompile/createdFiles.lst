@@ -1,4 +1,3 @@
-Main.class
 pages\GoogleHomePage.class
 utils\UIAutomationUtils.class
 config\Hooks.class
