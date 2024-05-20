@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-20T21:55:35 IST" name="Default suite" finished-at="2024-05-20T21:55:44 IST" duration-ms="8672">
+    <groups>
+    </groups>
+    <test started-at="2024-05-20T21:55:35 IST" name="Default test" finished-at="2024-05-20T21:55:44 IST" duration-ms="8672">
+      <class name="tests.NavigationTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:35 IST" name="beforeSuite" finished-at="2024-05-20T21:55:35 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:35 IST" name="beforeTest" finished-at="2024-05-20T21:55:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:35 IST" name="beforeMethod" finished-at="2024-05-20T21:55:40 IST" duration-ms="4184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="navigateToAppTest()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:40 IST" name="navigateToAppTest" finished-at="2024-05-20T21:55:44 IST" duration-ms="3939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAppTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:44 IST" name="afterMethod" finished-at="2024-05-20T21:55:44 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:44 IST" name="afterTest" finished-at="2024-05-20T21:55:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.NavigationTest@6a6cb05c]" started-at="2024-05-20T21:55:44 IST" name="afterSuite" finished-at="2024-05-20T21:55:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.NavigationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
