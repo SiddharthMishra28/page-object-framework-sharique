@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.NavigationTest">
+      <class name="tests.GTPLBankLoginTest">
         <methods>
+          <include name="loginTest"/>
           <include name="beforeMethod"/>
-          <include name="navigateToAppTest"/>
           <include name="afterSuite"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- tests.NavigationTest -->
+      </class> <!-- tests.GTPLBankLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

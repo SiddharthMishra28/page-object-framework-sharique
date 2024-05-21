@@ -1,7 +1,7 @@
 package utils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class UIAutomationUtils {
 	// IMPLEMENTATION FOR RE-USABLE METHODS
@@ -17,14 +17,19 @@ public class UIAutomationUtils {
 	 * @param url
 	 */
 	public void navigateToUrl(String url) {
-		this.driver.get(url);
+		driver.get(url);
 	}
 	
-	public void clickElement(WebElement element) {
-		element.click();
+	public void clickElement(By element) {
+		driver.findElement(element).click();
 	}
 	
-	public void type(WebElement element, String text) {
-		element.sendKeys(text);
+	public void type(By element, String text) {
+		driver.findElement(element).sendKeys(text);
+	}
+	
+	public void waitForWebElement(By element) {
+//		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(Long.parseLong(Hooks.configObject.get("wait_duration"))));
+//		wait.until(el -> driver.findElement(element).isDisplayed());
 	}
 }
