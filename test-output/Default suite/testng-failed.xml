@@ -5,11 +5,11 @@
     <classes>
       <class name="tests.GTPLBankLoginTest">
         <methods>
+          <include name="testLoginFunctionalityPositive"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="newCustomerTest"/>
+          <include name="beforeTest"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
         </methods>
