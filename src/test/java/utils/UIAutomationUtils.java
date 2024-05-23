@@ -18,6 +18,7 @@ public class UIAutomationUtils {
 	 */
 	public void navigateToUrl(String url) {
 		driver.get(url);
+		driver.manage().window().maximize();
 	}
 	
 	public void clickElement(By element) {
@@ -26,6 +27,14 @@ public class UIAutomationUtils {
 	
 	public void type(By element, String text) {
 		driver.findElement(element).sendKeys(text);
+	}
+	
+	public boolean elementExist(By element) {
+		if(driver.findElements(element).size()>0) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	public void waitForWebElement(By element) {

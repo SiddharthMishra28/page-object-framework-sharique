@@ -3,6 +3,7 @@ package config;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -16,14 +17,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+
+
 public class Hooks {
 	
 	public static Map<String, String> configObject;
 	public WebDriver driver;
+	public static ExtentReports extent =  new ExtentReports();
+	ExtentSparkReporter sparkReporter;
+
 	
 	@BeforeSuite
 	public void beforeSuite() {
 		configObject = readConfigToMap();
+		Date currentDate = new Date();
+
+		String ExtenReportFilePath = System.getProperty("user.dir")+"\\ExtentReport\\"+"ExecutionStatus-"+currentDate.getTime()+"_ExtentReport.html";
+		sparkReporter = new ExtentSparkReporter(ExtenReportFilePath);
+		extent.attachReporter(sparkReporter);
 	}
 	
 	@BeforeTest
@@ -55,6 +69,7 @@ public class Hooks {
 		if(this.driver != null) {
 			this.driver.quit();
 		}
+		extent.flush();
 	}
 	
 	/**

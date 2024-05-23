@@ -18,12 +18,19 @@ public class GTPLBankHomepage extends UIAutomationUtils{
 	By userNameField = By.name("uid");
 	By passwordField = By.name("password");
 	By loginButton = By.name("btnLogin");
+	By NewCustomerMenuLink = By.xpath("//ul[@class='menusubnav']//*[contains(text(),'New Customer')]");
 	
-	public void login(String userId, String password) {
+	public String login(String userId, String password) {
 		super.navigateToUrl(Hooks.configObject.get("base_url"));
 		super.type(userNameField, userId);
 		super.type(passwordField, password);
 		super.clickElement(loginButton);
+		if(super.elementExist(NewCustomerMenuLink)==true){
+			return "Passed";
+		}else {
+			return "Failed";
+		}
+		
 	}
 	
 }
