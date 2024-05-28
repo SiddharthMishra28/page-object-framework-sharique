@@ -20,5 +20,18 @@ public class LoginFunctionalityClass extends UIAutomationUtils{
 		this.type(this.getLocatorFromDataSource("loginPage", "userIdField"), userName);
 		this.type(this.getLocatorFromDataSource("loginPage", "passwordField"), password);
 		this.clickElement(this.getLocatorFromDataSource("loginPage", "loginButton"));
+		String compiledPath = String.format("//%s[contains(text(),%s)]", "a", "Men");
+		// matchBytext=Men
+		// "MatchByText=men" - from Excel
+//		String functionName = "MatchByText=men".split("=")[0];
+//		String text = "MatchByText=men".split("=")[1];
+//		switch(functionName) {
+//		case "MatchByText":
+//			return String.format("//%s[contains(text(),%s)]", "a", text);
+//			break;
+//			
+//		case "ContainsText":
+//			
+//		}
 	}
 }
