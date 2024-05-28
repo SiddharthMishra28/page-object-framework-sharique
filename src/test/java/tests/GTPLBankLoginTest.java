@@ -1,13 +1,15 @@
-package tests;
-
-
-import java.io.IOException;
-
-import org.testng.annotations.Test;
-import config.Hooks;
-import pages.LoginFunctionalityClass;
-
-public class GTPLBankLoginTest extends Hooks{
+//package tests;
+//
+//
+//import org.testng.annotations.Test;
+//
+//import com.aventstack.extentreports.ExtentTest;
+//
+//import config.Hooks;
+//import pages.GTPLBankHomepage;
+//import pages.GTPLBankNewCustomer;
+//
+//public class GTPLBankLoginTest extends Hooks{
 //	
 //	@Test
 //	public void loginTest() throws InterruptedException {
@@ -36,10 +38,5 @@ public class GTPLBankLoginTest extends Hooks{
 //		
 //	}
 //	
-	
-	@Test
-	public void testLoginFunctionalityPositive() throws IOException {
-		LoginFunctionalityClass functionality = new LoginFunctionalityClass(driver);
-		functionality.login("mngr571718", "patygYh");
-	}
-}
+//	
+//}

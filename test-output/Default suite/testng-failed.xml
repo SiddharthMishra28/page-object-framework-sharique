@@ -3,17 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.GTPLBankLoginTest">
+      <class name="tests.TestExecutionControl">
         <methods>
-          <include name="testLoginFunctionalityPositive"/>
           <include name="beforeMethod"/>
           <include name="afterSuite"/>
+          <include name="test5"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
+          <include name="test3"/>
           <include name="beforeSuite"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- tests.GTPLBankLoginTest -->
+      </class> <!-- tests.TestExecutionControl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
