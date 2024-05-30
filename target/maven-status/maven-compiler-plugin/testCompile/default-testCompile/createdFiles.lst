@@ -1,5 +1,0 @@
-pages\GoogleHomePage.class
-utils\UIAutomationUtils.class
-config\Hooks.class
-tests\GoogleSearchTest.class
-reporting\ReportManager.class
